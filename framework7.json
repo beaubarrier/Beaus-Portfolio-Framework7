@@ -1,0 +1,19 @@
+{
+  "cwd": "/Users/beaubarrier/Documents/GitHub/Beaus-Portfolio-Framework7",
+  "type": [
+    "pwa"
+  ],
+  "name": "beausportfolio",
+  "framework": "react",
+  "template": "tabs",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": true,
+    "color": "#179100",
+    "darkTheme": true,
+    "iconFonts": true,
+    "fillBars": true
+  },
+  "customBuild": false
+}
