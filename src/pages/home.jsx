@@ -2,6 +2,7 @@ import React from "react";
 import { getDevice } from "framework7";
 import {
   Page,
+  PageContent,
   Navbar,
   NavLeft,
   NavTitle,
@@ -20,15 +21,56 @@ import {
   Menu,
   MenuItem,
 } from "framework7-react";
+import bioPic from "../assets/bioPic.png";
+
 const device = getDevice();
 const desktopHome = () => {
   if (device.desktop) {
     return (
       <Page className="home">
-        <Block>
-          <BlockTitle>Welcome!</BlockTitle>
-          <Card>Thanks for visiting my portfolio!</Card>
-        </Block>
+        <PageContent>
+          <Block>
+            <BlockTitle>Welcome!</BlockTitle>
+            <Row>
+              <Col>
+                Welcome Paragraph. Blahblah blah blahblah balh blah blah.
+                Blahblah blah blahblah balh blah blah. Blahblah blah blahblah
+                balh blah blah. Blahblah blah blahblah balh blah blah. Blahblah
+                blah blahblah balh blah blah. Blahblah blah blahblah balh blah
+                blah. Blahblah blah blahblah balh blah blah. Blahblah blah
+                blahblah balh blah blah. Blahblah blah blahblah balh blah blah.
+                Blahblah blah blahblah balh blah blah. Blahblah blah blahblah
+                balh blah blah. Blahblah blah blahblah balh blah blah. Blahblah
+                blah blahblah balh blah blah. Blahblah blah blahblah balh blah
+                blah.
+              </Col>
+              <Col>
+                <img
+                  src={bioPic}
+                  id="bioPic"
+                  alt="Picture of me and my daughter."
+                />
+              </Col>
+            </Row>
+          </Block>
+
+          <Block>
+            <BlockTitle>My Story</BlockTitle>
+            <Row>
+              Blahblah blah blahblah balh blah blah. Blahblah blah blahblah balh
+              blah blah. Blahblah blah blahblah balh blah blah. Blahblah blah
+              blahblah balh blah blah. Blahblah blah blahblah balh blah blah.
+              Blahblah blah blahblah balh blah blah. Blahblah blah blahblah balh
+              blah blah.
+            </Row>
+          </Block>
+
+          <Block>
+            <Row>
+              <Button small>Download Resume</Button>
+            </Row>
+          </Block>
+        </PageContent>
       </Page>
     );
   }
