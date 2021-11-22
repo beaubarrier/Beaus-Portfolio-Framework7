@@ -38,6 +38,7 @@
 }
 .appbar,
 .page {
+  height: 100%;
 }
 .col {
 }
@@ -54,6 +55,7 @@
   left: 50%;
   width: 100%;
 }
+
 .navbar,
 .toolbar,
 .subnavbar,
@@ -88,7 +90,7 @@
 }
 /* Your app custom styles here */
 .menuitem {
-  background: white;
+  background: rgb(57, 57, 57);
 }
 .aurora {
   --f7-menu-dropdown-hover-bg-color: rgba(255, 255, 255, 0.975);
@@ -115,7 +117,7 @@
   min-width: 405px;
   min-height: 305px;
   float: right;
-  border: solid 1px #179100;
+  border: solid 1px #77008f;
   border-radius: 10px;
   margin: 0px 30px 20px;
 }
@@ -125,4 +127,21 @@
 #skillGauge {
   display: flex;
   float: center;
+}
+#hrLine {
+  display: flex;
+  float: center;
+}
+.resBtn {
+  display: inline-block;
+  width: 49%;
+  margin: 20px;
+}
+#resumeSec {
+  display: inline-flex;
+}
+.secTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
