@@ -101,7 +101,7 @@ const MyApp = () => {
     if (device.desktop) {
       return (
         <Navbar large sliding={false}>
-          <img id="nameLogo" src={nameLogo} />
+          <img id="nameLogo" src={nameLogo} /> | MERN Stack Web Dev
           <Menu style={{ marginLeft: "auto" }}>
             <Button small href="#" text="Home" />
             <Button small href="#" text="Projects" />

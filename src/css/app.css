@@ -30,9 +30,29 @@
   --f7-tabbar-link-active-border-color: #fff;
   --f7-button-hover-bg-color: #9b2bc7;
   --f7-button-text-color: white;
+
+  --f7-card-margin-horizontal: 5%;
+  /* --f7-card-margin-vertical: 16px; */
+  --f7-card-content-padding-horizontal: 5%;
+  /* --f7-card-content-padding-vertical: 50px; */
 }
 .appbar,
 .page {
+}
+.col {
+}
+.card {
+  /* min-width: 50%; */
+}
+.cardcontent {
+  /* position: absolute;
+  margin-left: 50%;
+  width: 100%;
+  height: 100%; */
+}
+.center {
+  left: 50%;
+  width: 100%;
 }
 .navbar,
 .toolbar,
@@ -87,8 +107,22 @@
   align-items: center;
 }
 #bioPic {
+  /* position: relative; */
   width: 100%;
   height: 100%;
   max-width: 469px;
   max-height: 353px;
+  min-width: 405px;
+  min-height: 305px;
+  float: right;
+  border: solid 1px #179100;
+  border-radius: 10px;
+  margin: 0px 30px 20px;
+}
+#welcomeP {
+  padding-right: 100px;
+}
+#skillGauge {
+  display: flex;
+  float: center;
 }
