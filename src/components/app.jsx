@@ -101,11 +101,14 @@ const MyApp = () => {
     if (device.desktop) {
       return (
         <Navbar large sliding={false}>
-          <img id="nameLogo" src={nameLogo} /> | MERN Stack Web Dev
+          <img id="nameLogo" src={nameLogo} />
+          <p style={{ fontSize: "12pt" }}>
+            | Full Stack<br></br> Developer
+          </p>
           <Menu style={{ marginLeft: "auto" }}>
-            <Button small href="#" text="Home" />
-            <Button small href="#" text="Projects" />
-            <Button small href="#" text="Contact" />
+            <Button small href="/" text="Home" />
+            <Button small href="/projects/" text="Projects" />
+            <Button small href="/contact/" text="Contact" />
           </Menu>
         </Navbar>
       );

@@ -1,16 +1,16 @@
 /* Custom color theme properties */
 /* Color Scheme */
-/* 179100 Bright Green 
-   9b2bc7 Highlight Purple
-   77008F Main Purple
-   8F0018 Red
+/* 5ea9d0 Carolina blue lightest
+   1481ba Star command blue light
+   2d61b0 Denim blue main
+   4641a5 Ocean blue pastel/purpleish
 
 */
 :root {
-  --f7-theme-color: #77008f;
+  --f7-theme-color: #2d61b0;
   --f7-theme-color-rgb: 23, 145, 0;
-  --f7-theme-color-shade: #179100;
-  --f7-theme-color-tint: #179100;
+  --f7-theme-color-shade: #254477;
+  --f7-theme-color-tint: #1481ba;
 }
 
 /* Invert navigation bars to fill style */
@@ -28,13 +28,16 @@
   --f7-tabbar-link-inactive-color: rgba(255, 255, 255, 0.54);
   --f7-sheet-border-color: transparent;
   --f7-tabbar-link-active-border-color: #fff;
-  --f7-button-hover-bg-color: #9b2bc7;
+  --f7-button-hover-bg-color: #1481ba;
   --f7-button-text-color: white;
 
   --f7-card-margin-horizontal: 5%;
   /* --f7-card-margin-vertical: 16px; */
   --f7-card-content-padding-horizontal: 5%;
   /* --f7-card-content-padding-vertical: 50px; */
+}
+p {
+  font-size: 14pt;
 }
 .appbar,
 .page {
@@ -52,10 +55,13 @@
   height: 100%; */
 }
 .center {
-  left: 50%;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-
+.button {
+  font-size: 10pt;
+}
 .navbar,
 .toolbar,
 .subnavbar,
@@ -65,7 +71,7 @@
   --f7-link-highlight-color: var(--f7-link-highlight-white);
   --f7-link-touch-ripple-color: var(--f7-touch-ripple-white);
   --f7-button-text-color: #fff;
-  --f7-button-pressed-bg-color: #179100;
+  --f7-button-pressed-bg-color: #5ea9d0;
 }
 .navbar-large-transparent,
 .navbar-large.navbar-transparent {
@@ -101,9 +107,9 @@
   width: 25%; */
 }
 .home {
-  --f7-button-bg-color: #77008f;
-  --f7-button-hover-bg-color: #9b2bc7;
-  --f7-button-pressed-bg-color: #179100;
+  --f7-button-bg-color: #2d61b0;
+  --f7-button-hover-bg-color: #1481ba;
+  --f7-button-pressed-bg-color: #5ea9d0;
   display: inline-block;
   justify-content: center;
   align-items: center;
@@ -117,7 +123,7 @@
   min-width: 405px;
   min-height: 305px;
   float: right;
-  border: solid 1px #77008f;
+  border: solid 1px #2d61b0;
   border-radius: 10px;
   margin: 0px 30px 20px;
 }
@@ -127,21 +133,38 @@
 #skillGauge {
   display: flex;
   float: center;
+  margin-bottom: 60px;
 }
 #hrLine {
   display: flex;
   float: center;
 }
 .resBtn {
-  display: inline-block;
-  width: 49%;
   margin: 20px;
+  min-width: 160px;
+  max-width: 160px;
 }
 #resumeSec {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .secTitle {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+}
+.card-header {
+  display: block;
+  height: 6vw;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.projCard {
+  width: 35%;
+  /* overflow-y: scroll; */
+}
+.card-content-padding {
+  overflow-y: scroll;
 }
