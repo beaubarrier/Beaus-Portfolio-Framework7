@@ -60,10 +60,12 @@ const ProjectsPage = () => {
           >
             <CardContent padding={false}>
               <div
-                className="bg-color-red"
+                // className="bg-color-red"
                 style={{
                   height: "300px",
-                  backgroundImage: "url(./assets/typeCalcCardBG.png)",
+                  backgroundImage: "url(./assets/tcbgTEST.png)",
+                  width: "100%",
+                  backgroundRepeat: "no-repeat",
                 }}
               >
                 <CardHeader textColor="white" className="display-block">

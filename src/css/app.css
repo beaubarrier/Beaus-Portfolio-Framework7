@@ -4,6 +4,7 @@
    1481ba Star command blue light
    2d61b0 Denim blue main
    4641a5 Ocean blue pastel/purpleish
+   254477 Dark cornflower blue shade
 
 */
 :root {
@@ -122,13 +123,14 @@ p {
   max-height: 353px;
   min-width: 405px;
   min-height: 305px;
-  float: right;
+  margin-top: 10%;
+
   border: solid 1px #2d61b0;
   border-radius: 10px;
-  margin: 0px 30px 20px;
+  /* margin: 0px 50% 20px; */
 }
 #welcomeP {
-  padding-right: 100px;
+  margin-top: 10%;
 }
 #skillGauge {
   display: flex;
@@ -163,7 +165,7 @@ p {
 }
 .projCard {
   width: 35%;
-  /* overflow-y: scroll; */
+  height: 200px;
 }
 .card-content-padding {
   overflow-y: scroll;

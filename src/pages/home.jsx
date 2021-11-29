@@ -47,32 +47,36 @@ const desktopHome = () => {
       <Page className="home">
         <PageContent>
           <Block>
+            <h1 className="center">I LOVE TO CREATE BEAUTIFUL WEBSITES</h1>
+
             <Card>
               <CardContent>
-                <Row>
-                  <Col>
-                    <BlockTitle>The dev we deserve...</BlockTitle>
-                    <img
-                      src={bioPic}
-                      id="bioPic"
-                      alt="Picture of my daughter and I at the"
-                    />
-                    <p id="welcomeP" className="">
-                      ... it's what I do. I am a web developer certified in
-                      creating websites using the MERN stack.Blahblah blah
-                      blahblah balh blah blah. Blahblah blah blahblah balh blah
-                      blah. Blahblah blah blahblah balh blah blah. Blahblah blah
-                      blahblah balh blah blah. Blahblah blah blahblah balh blah
-                      blah. Blahblah blah blahblah balh blah blah. Blahblah blah
-                      blahblah balh blah blah. Blahblah blah blahblah balh blah
-                      blah. Blahblah blah blahblah balh blah blah. Blahblah blah
-                      blahblah balh blah blah. Blahblah blah blahblah balh blah
-                      blah. Blahblah blah blahblah balh blah blah. Blahblah blah
-                      blahblah balh blah blah. Blahblah blah blahblah balh blah
-                      blah.
-                    </p>
-                  </Col>
-                </Row>{" "}
+                <Row className="center">
+                  <img
+                    src={bioPic}
+                    id="bioPic"
+                    alt="Picture of my daughter and I at the river"
+                    className="center"
+                    // style={{
+                    //   display: "inline-block",
+                    //   float: "right",
+                    //   left: "50%",
+                    // }}
+                  />
+                  <p id="welcomeP">
+                    I am a web developer certified in creating websites using
+                    the MERN stack.Blahblah blah blahblah balh blah blah.
+                    Blahblah blah blahblah balh blah blah. Blahblah blah
+                    blahblah balh blah blah. Blahblah blah blahblah balh blah
+                    blah. Blahblah blah blahblah balh blah blah. Blahblah blah
+                    blahblah balh blah blah. Blahblah blah blahblah balh blah
+                    blah. Blahblah blah blahblah balh blah blah. Blahblah blah
+                    blahblah balh blah blah. Blahblah blah blahblah balh blah
+                    blah. Blahblah blah blahblah balh blah blah. Blahblah blah
+                    blahblah balh blah blah. Blahblah blah blahblah balh blah
+                    blah. Blahblah blah blahblah balh blah blah.
+                  </p>
+                </Row>
                 <ColoredLine />
                 <Row>
                   <Col>
