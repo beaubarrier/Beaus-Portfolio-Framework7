@@ -164,8 +164,9 @@ p {
   color: #fff;
 }
 .projCard {
-  width: 35%;
+  width: 90%;
   height: 200px;
+  margin-left: 5%;
 }
 .card-content-padding {
   overflow-y: scroll;

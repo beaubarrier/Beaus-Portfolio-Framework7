@@ -3,6 +3,8 @@ import {
   Page,
   Navbar,
   List,
+  Col,
+  Toolbar,
   ListInput,
   Card,
   Link,
@@ -18,14 +20,41 @@ import {
 
 const SettingsPage = () => (
   <Page name="contact">
+    {/* <Card className="center"> */}
+    {/* <Toolbar> */}
+    <Card className="center" style={{ width: "52%" }}>
+      <Toolbar
+        labels
+        style={{ width: "50%", height: "130px" }}
+        className="center"
+      >
+        <Link
+          iconAurora="f7:logo_linkedin"
+          iconSize="70"
+          className="size-50"
+          style={{ color: "white" }}
+          text="LinkedIn"
+        ></Link>
+        <Link
+          iconAurora="f7:logo_github"
+          iconSize="70"
+          className="size-50"
+          style={{ color: "white" }}
+          text="Github"
+        ></Link>
+        <Link
+          iconAurora="f7:envelope"
+          iconSize="70"
+          className="size-50"
+          style={{ color: "white" }}
+          text="Email"
+        ></Link>
+      </Toolbar>
+    </Card>
+
+    {/* </Toolbar> */}
+    {/* </Card> */}
     <Card>
-      <Link
-        iconAurora="f7:logo_linkedin"
-        iconSize="50"
-        className="size-50"
-        style={{ color: "white" }}
-        text="LinkedIn"
-      ></Link>
       <Block>
         <BlockTitle>Send me a message</BlockTitle>
         <List form formStoreData id="demo-form">

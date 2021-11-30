@@ -7,6 +7,7 @@ import {
   CardFooter,
   CardContent,
   Link,
+  Row,
   Navbar,
   List,
   ListItem,
@@ -34,7 +35,7 @@ const ProjectsPage = () => {
         <Block>
           <h2 className="center">My Work</h2>
         </Block>
-        <Block>
+        <Block classname="">
           {/* <Card expandable closeByBackdropClick backdrop className="projCards">
             <CardHeader
               className="no-border header-pic"
@@ -52,75 +53,80 @@ const ProjectsPage = () => {
             </CardContent>
             <CardFooter>sdfsd</CardFooter>
           </Card> */}
-          <Card
-            expandable
-            className="projCard"
-            backdrop="false"
-            closeByBackdropClick="false"
-          >
-            <CardContent padding={false}>
-              <div
-                // className="bg-color-red"
-                style={{
-                  height: "300px",
-                  backgroundImage: "url(./assets/tcbgTEST.png)",
-                  width: "100%",
-                  backgroundRepeat: "no-repeat",
-                }}
-              >
-                <CardHeader textColor="white" className="display-block">
-                  PokeType Calculator <br />
-                  <small style={{ opacity: 0.7 }}>
-                    A tool for Video Game Championship battles
-                  </small>
-                </CardHeader>
-                <Link
-                  cardClose
-                  color="white"
-                  className="card-opened-fade-in card-close"
-                  style={{ position: "absolute", right: "15px", top: "15px" }}
-                  iconF7="xmark_circle_fill"
-                />
-              </div>
-              <div className="card-content-padding">
-                <p>
-                  Framework7 - is a free and open source HTML mobile framework
-                  to develop hybrid mobile apps or web apps with iOS or Android
-                  (Material) native look and feel. It is also an indispensable
-                  prototyping apps tool to show working app prototype as soon as
-                  possible in case you need to. Framework7 is created by
-                  Vladimir Kharlampidi (iDangero.us). Framework7 - is a free and
-                  open source HTML mobile framework to develop hybrid mobile
-                  apps or web apps with iOS or Android (Material) native look
-                  and feel. It is also an indispensable prototyping apps tool to
-                  show working app prototype as soon as possible in case you
-                  need to. Framework7 is created by Vladimir Kharlampidi
-                  (iDangero.us). Framework7 - is a free and open source HTML
-                  mobile framework to develop hybrid mobile apps or web apps
-                  with iOS or Android (Material) native look and feel. It is
-                  also an indispensable prototyping apps tool to show working
-                  app prototype as soon as possible in case you need to.
-                  Framework7 is created by Vladimir Kharlampidi (iDangero.us).
-                  Framework7 - is a free and open source HTML mobile framework
-                  to develop hybrid mobile apps or web apps with iOS or Android
-                  (Material) native look and feel. It is also an indispensable
-                  prototyping apps tool to show working app prototype as soon as
-                  possible in case you need to. Framework7 is created by
-                  Vladimir Kharlampidi (iDangero.us). Framework7 - is a free and
-                  open source HTML mobile framework to develop hybrid mobile
-                  apps or web apps with iOS or Android (Material) native look
-                  and feel. It is also an indispensable prototyping apps tool to
-                  show working app prototype as soon as possible in case you
-                  need to. Framework7 is created by Vladimir Kharlampidi
-                  (iDangero.us).
-                </p>
-                <Link src="https://github.com">TEST LINK</Link>
-              </div>
-              <CardFooter>
-                {" "}
-                <Link src="https://github.com">TEST LINK</Link>
-              </CardFooter>
-            </CardContent>
+
+          <Card style={{ paddingTop: "3%", paddingBottom: "3%" }}>
+            <Card
+              expandable
+              className="projCard"
+              backdrop="false"
+              closeByBackdropClick="false"
+            >
+              <CardContent padding={false}>
+                <div
+                  className=""
+                  style={{
+                    height: "300px",
+                    backgroundImage: "url(./assets/tcbgTEST.png)",
+                    width: "100%",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <CardHeader textColor="white" className="display-block">
+                    PokeType Calculator <br />
+                    <small style={{ opacity: 0.7 }}>
+                      A tool for Video Game Championship battles
+                    </small>
+                  </CardHeader>
+                  <Link
+                    cardClose
+                    color="white"
+                    className="card-opened-fade-in card-close"
+                    style={{ position: "absolute", right: "15px", top: "15px" }}
+                    iconF7="xmark_circle_fill"
+                  />
+                </div>
+                <div className="card-content-padding ">
+                  <p>
+                    Framework7 - is a free and open source HTML mobile framework
+                    to develop hybrid mobile apps or web apps with iOS or
+                    Android (Material) native look and feel. It is also an
+                    indispensable prototyping apps tool to show working app
+                    prototype as soon as possible in case you need to.
+                    Framework7 is created by Vladimir Kharlampidi (iDangero.us).
+                    Framework7 - is a free and open source HTML mobile framework
+                    to develop hybrid mobile apps or web apps with iOS or
+                    Android (Material) native look and feel. It is also an
+                    indispensable prototyping apps tool to show working app
+                    prototype as soon as possible in case you need to.
+                    Framework7 is created by Vladimir Kharlampidi (iDangero.us).
+                    Framework7 - is a free and open source HTML mobile framework
+                    to develop hybrid mobile apps or web apps with iOS or
+                    Android (Material) native look and feel. It is also an
+                    indispensable prototyping apps tool to show working app
+                    prototype as soon as possible in case you need to.
+                    Framework7 is created by Vladimir Kharlampidi (iDangero.us).
+                    Framework7 - is a free and open source HTML mobile framework
+                    to develop hybrid mobile apps or web apps with iOS or
+                    Android (Material) native look and feel. It is also an
+                    indispensable prototyping apps tool to show working app
+                    prototype as soon as possible in case you need to.
+                    Framework7 is created by Vladimir Kharlampidi (iDangero.us).
+                    Framework7 - is a free and open source HTML mobile framework
+                    to develop hybrid mobile apps or web apps with iOS or
+                    Android (Material) native look and feel. It is also an
+                    indispensable prototyping apps tool to show working app
+                    prototype as soon as possible in case you need to.
+                    Framework7 is created by Vladimir Kharlampidi (iDangero.us).
+                  </p>
+                  <Link src="https://github.com">TEST LINK</Link>
+                </div>
+                <CardFooter>
+                  {" "}
+                  <Link src="https://github.com">TEST LINK</Link>
+                </CardFooter>
+                <Block></Block>
+              </CardContent>
+            </Card>
           </Card>
         </Block>
       </PageContent>
