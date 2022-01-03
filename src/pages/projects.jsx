@@ -7,6 +7,8 @@ import {
   CardFooter,
   CardContent,
   Link,
+  Fab,
+  Icon,
   Row,
   Navbar,
   List,
@@ -84,6 +86,20 @@ const ProjectsPage = () => {
                     style={{ position: "absolute", right: "15px", top: "15px" }}
                     iconF7="xmark_circle_fill"
                   />
+                  <Fab cardClose position="right-top">
+                    <Link
+                      fab
+                      cardClose
+                      color="white"
+                      className="card-opened-fade-in"
+                      // style={{
+                      //   position: "absolute",
+                      //   right: "15px",
+                      //   top: "15px",
+                      // }}
+                      iconF7="xmark_circle_fill"
+                    />
+                  </Fab>
                 </div>
                 <div className="card-content-padding ">
                   <p>

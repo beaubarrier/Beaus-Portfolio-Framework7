@@ -102,14 +102,15 @@ const MyApp = () => {
       return (
         <Navbar large sliding={false}>
           <img id="nameLogo" src={nameLogo} />
-          <p style={{ fontSize: "12pt" }}>
+          {/* <p style={{ fontSize: "12pt" }}>
             | Full Stack<br></br> Developer
-          </p>
+          </p> */}
           <Menu style={{ marginLeft: "auto" }}>
             <Button small href="/" text="Home" />
             <Button small href="/projects/" text="Projects" />
             <Button small href="/contact/" text="Contact" />
           </Menu>
+          <br></br> <br></br>
         </Navbar>
       );
     }
@@ -118,7 +119,6 @@ const MyApp = () => {
     <App {...f7params} themeDark>
       {/* Top Navigation for Desktop */}
       {desktopTopNav()}
-
       {/* Views/Tabs container */}
       <Views tabs className="safe-areas">
         {/* Tabbar for switching views-tabs */}
@@ -132,7 +132,7 @@ const MyApp = () => {
 
         {/* contact View */}
         <View id="view-contact" name="contact" tab url="/contact/" />
-      </Views>
+      </Views>{" "}
     </App>
   );
 };

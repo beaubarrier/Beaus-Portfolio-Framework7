@@ -23,7 +23,9 @@ import {
   Menu,
   MenuItem,
 } from "framework7-react";
+
 import bioPic from "../assets/bioPic.png";
+
 const ColoredLine = ({ color }) => (
   <hr
     id="hrLine"
@@ -40,49 +42,36 @@ const ColoredLine = ({ color }) => (
     }}
   />
 );
+
 const device = getDevice();
+
 const desktopHome = () => {
   if (device.desktop) {
     return (
       <Page className="home">
         <PageContent>
           <Block>
-            <h1 className="center">I LOVE TO CREATE BEAUTIFUL WEBSITES</h1>
-
             <Card>
               <CardContent>
                 <Row className="center">
+                  <h1 className="center">
+                    Passionate web developer with a focus on front end
+                    development.
+                  </h1>
                   <img
                     src={bioPic}
                     id="bioPic"
-                    alt="Picture of my daughter and I at the river"
+                    alt="Picture of my daughter and I by the river."
                     className="center"
-                    // style={{
-                    //   display: "inline-block",
-                    //   float: "right",
-                    //   left: "50%",
-                    // }}
                   />
-                  <p id="welcomeP">
-                    I am a web developer certified in creating websites using
-                    the MERN stack.Blahblah blah blahblah balh blah blah.
-                    Blahblah blah blahblah balh blah blah. Blahblah blah
-                    blahblah balh blah blah. Blahblah blah blahblah balh blah
-                    blah. Blahblah blah blahblah balh blah blah. Blahblah blah
-                    blahblah balh blah blah. Blahblah blah blahblah balh blah
-                    blah. Blahblah blah blahblah balh blah blah. Blahblah blah
-                    blahblah balh blah blah. Blahblah blah blahblah balh blah
-                    blah. Blahblah blah blahblah balh blah blah. Blahblah blah
-                    blahblah balh blah blah. Blahblah blah blahblah balh blah
-                    blah. Blahblah blah blahblah balh blah blah.
-                  </p>
                 </Row>
-                <ColoredLine />
+                {/* <ColoredLine /> */}
                 <Row>
                   <Col>
                     {/* <BlockTitle>My Skills</BlockTitle> */}
+                    <br></br>
                     <div className="secTitle">
-                      <h2>My Skills</h2>
+                      <h4>Skill Levels</h4>
                     </div>
                     <Block id="skillGauge">
                       {" "}
